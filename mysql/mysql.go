@@ -26,7 +26,8 @@ func initMysql() {
 	Engine, err = xorm.NewEngine(driverName,
 		Config.Username+":"+Config.Password+"@tcp("+Config.Uri+")/"+Config.Database+"?charset=utf-8")
 	if err != nil {
-		logger.Fatal.Fatal("MySQL数据库连接失败:", err)
+		logger.Error.Fatal("MySQL初始化失败:", err)
+		return
 	}
-	logger.Info.Println("数据库连接成功...")
+	logger.Info.Println("MySQL连接成功...")
 }
