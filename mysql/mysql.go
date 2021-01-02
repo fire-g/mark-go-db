@@ -33,6 +33,6 @@ func initMysql() {
 		logger.Info.Println(err)
 		return
 	}
-	defer Engine.Close() //延迟关闭数据库
+	//defer Engine.Close() //延迟关闭数据库
 	logger.Info.Println("MySQL连接成功...")
 }
