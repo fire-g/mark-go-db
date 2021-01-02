@@ -24,10 +24,15 @@ func initMysql() {
 	logger.Info.Println("初始化Mysql数据库...")
 	var err error
 	Engine, err = xorm.NewEngine(driverName,
-		Config.Username+":"+Config.Password+"@tcp("+Config.Uri+")/"+Config.Database+"?charset=utf-8")
+		Config.Username+":"+Config.Password+"@tcp("+Config.Uri+")/"+Config.Database+"?charset=utf8")
 	if err != nil {
 		logger.Error.Fatal("MySQL初始化失败:", err)
 		return
 	}
+	if err := Engine.Ping(); err != nil {
+		logger.Info.Println(err)
+		return
+	}
+	defer Engine.Close() //延迟关闭数据库
 	logger.Info.Println("MySQL连接成功...")
 }
