@@ -17,10 +17,10 @@ var (
 )
 
 func InitMongo() *mongo.Client {
-	logger.Info.Println("初始化Mongo数据库...")
+	logger.Logger.Info.Println("初始化Mongo数据库...")
 	Client, err = mongoInit(Config)
 	if err != nil {
-		logger.Error.Println("Mongo初始化失败:", err)
+		logger.Logger.Error.Println("Mongo初始化失败:", err)
 	}
 	return Client
 }

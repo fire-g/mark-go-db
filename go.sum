@@ -23,6 +23,8 @@ github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1
 github.com/eapache/queue v1.1.0/go.mod h1:6eCeP0CKFpHLu8blIFXhExK/dRa7WDZfr6jVFPTqq+I=
 github.com/fire-g/mark-go-util v0.0.0-20201229124540-d69f6e49c087 h1:z5qjAPAHsE8MBBiDv2ls8RRn+HgeZu9EVtDTpeQGimw=
 github.com/fire-g/mark-go-util v0.0.0-20201229124540-d69f6e49c087/go.mod h1:YxQgaKyy44EozmjrSkokDICaJUud6yCnukMPJLcxpeI=
+github.com/fire-g/mark-go-util v0.0.0-20211127153416-2340f47545cf h1:Nyu/AIaVrr+f4zwojJH3wTyHWQTX99G2NJ9TcCNK5E0=
+github.com/fire-g/mark-go-util v0.0.0-20211127153416-2340f47545cf/go.mod h1:YxQgaKyy44EozmjrSkokDICaJUud6yCnukMPJLcxpeI=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/go-kit/kit v0.8.0/go.mod h1:xBxKIO96dXMWWy0MnWVtmwkA9/13aqxPnvrjFYMA2as=
 github.com/go-logfmt/logfmt v0.3.0/go.mod h1:Qt1PoO58o5twSAckw1HlFXLmHsOX5/0LbT9GBnD5lWE=
